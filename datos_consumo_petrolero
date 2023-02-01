@@ -1,0 +1,16 @@
+Una empresa constructora de caminos, presenta gastos enormes por concepto de consumo de petróleo
+Realizando un análisis, se concluyó que los tres factores que más inciden en el consumo de petróleo al día (en litros), eran:
+- El número de horas-maquina trabajadas durante el día
+- La distancia recorrida por los transportes realizados durante el día (en kilómetros).
+- El rendimiento promedio de los motores que se utilizan en la faena diaria (en horas por litro).
+
+Recogiendo los datos de estas cuatro variables durante 9 días consecutivos, se obtuvieron los siguientes datos:
+
+Consumo diario de petróleo <- y
+Número de horas-Máquina <- x1
+Distancia de Transportes <- x2
+Rendimiento promedio Motores <- x3
+
+https://accensum.files.wordpress.com/2020/04/texto-de-ejercicios-regresion-lineal-multiple.pdf
+
+
