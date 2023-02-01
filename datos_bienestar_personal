@@ -33,6 +33,37 @@ y	x1	x2	x3
 76	19,72	73	51
 71	18,16	82	44
 73	19,8	65	54
+
+
+library(writexl)
+
+set.seed(2022)
+n <- 30
+
+# promedio - y
+promedio <- promedio <- c(round(rnorm(n=500, mean = 74, sd = 5),0))
+#dinero - x1
+dinero <- c(round(rnorm(n = 500, mean = 20, sd = 2), 2))
+#emocional-psicologica - x2
+emocional <- c(round(rnorm(n=500, mean = 65, sd = 9),0))
+#social - x3
+social <- c(round(rnorm(n=500, mean = 50, sd = 14),0))
+
+
+datos <- data.frame(bienestar, emocional, social, dinero)
+
+datos
+
+
+x1 <- dinero
+x2 <- emocional
+x3 <- social
+y <- promedio
+
+
+
+write_xlsx(data.frame(y, x1, x2, x3), path = "baseEstadistica.xlsx", col_names = TRUE)
+
 75	23,17	73	73
 78	19,05	76	64
 66	22,33	61	42
