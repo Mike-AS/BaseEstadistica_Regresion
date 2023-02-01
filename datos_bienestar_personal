@@ -3,67 +3,6 @@ x2 <- emocional
 x3 <- social
 y <- promedio
 y	x1	x2	x3
-79	19,89	55	50
-68	21,03	73	50
-70	17,89	69	49
-67	18,98	66	47
-72	22,38	70	77
-59	17,38	74	47
-69	19,37	87	53
-75	19,49	40	54
-78	23,2	50	61
-75	21,11	84	70
-79	17,92	61	44
-73	19,07	93	84
-69	20,99	80	17
-74	19,89	60	35
-74	21,7	70	43
-74	15,28	65	31
-71	21,03	72	22
-69	18,95	67	79
-79	19,92	58	55
-78	19,76	51	45
-76	18,01	70	33
-76	20,48	70	61
-80	19,62	57	87
-80	23,33	67	42
-72	19,85	61	56
-70	18,62	63	60
-77	22,13	56	77
-76	19,72	73	51
-71	18,16	82	44
-73	19,8	65	54
-
-
-library(writexl)
-
-set.seed(2022)
-n <- 30
-
-# promedio - y
-promedio <- promedio <- c(round(rnorm(n=500, mean = 74, sd = 5),0))
-#dinero - x1
-dinero <- c(round(rnorm(n = 500, mean = 20, sd = 2), 2))
-#emocional-psicologica - x2
-emocional <- c(round(rnorm(n=500, mean = 65, sd = 9),0))
-#social - x3
-social <- c(round(rnorm(n=500, mean = 50, sd = 14),0))
-
-
-datos <- data.frame(bienestar, emocional, social, dinero)
-
-datos
-
-
-x1 <- dinero
-x2 <- emocional
-x3 <- social
-y <- promedio
-
-
-
-write_xlsx(data.frame(y, x1, x2, x3), path = "baseEstadistica.xlsx", col_names = TRUE)
-
 75	23,17	73	73
 78	19,05	76	64
 66	22,33	61	42
@@ -534,3 +473,37 @@ write_xlsx(data.frame(y, x1, x2, x3), path = "baseEstadistica.xlsx", col_names =
 79	20,86	58	35
 70	20,39	75	43
 81	21,84	56	49
+
+
+
+
+
+library(writexl)
+
+set.seed(2022)
+n <- 30
+
+# promedio - y
+promedio <- promedio <- c(round(rnorm(n=500, mean = 74, sd = 5),0))
+#dinero - x1
+dinero <- c(round(rnorm(n = 500, mean = 20, sd = 2), 2))
+#emocional-psicologica - x2
+emocional <- c(round(rnorm(n=500, mean = 65, sd = 9),0))
+#social - x3
+social <- c(round(rnorm(n=500, mean = 50, sd = 14),0))
+
+
+datos <- data.frame(bienestar, emocional, social, dinero)
+
+datos
+
+
+x1 <- dinero
+x2 <- emocional
+x3 <- social
+y <- promedio
+
+
+
+write_xlsx(data.frame(y, x1, x2, x3), path = "baseEstadistica.xlsx", col_names = TRUE)
+
