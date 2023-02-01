@@ -1,0 +1,7 @@
+Consumo de energía eléctrica
+Se cree que la energía eléctrica que una planta química consume cada mes se relaciona con:
+la temperatura ambiental promedio, X1;
+el número de días del mes, X2;
+la pureza promedio del producto, X3;
+y las toneladas fabricadas del producto, X4.
+Se identifica a Y como el consumo de energía eléctrica
